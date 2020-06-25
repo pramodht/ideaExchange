@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: sfdx-actions/setup-sfdx@v1
+      - name: Validate branch name requirements
+        uses: deepakputhraya/action-branch-name@master
         with:
-          sfdx-auth-url: ${{ secrets.AUTH_SECRET }}
-      - name: sfdx-test-run
-        run: sfdx force:apex:test:run -l RunLocalTests -w 30
+            regex: '([a-zA-Z])+\/([a-zA-Z])+'
+            min_length: 6
