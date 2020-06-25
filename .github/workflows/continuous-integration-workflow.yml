@@ -1,12 +1,13 @@
-name: SFDX Test Run on Push
+name: Enforce branch naming
 
-on: [push]
+on: 
+  push:
+    branches-ignore:
+          -master
 
 jobs:
-  test:
-  
+  validate-branch-name:
     runs-on: ubuntu-latest
-    
     steps:
       - name: Validate branch name requirements
         uses: deepakputhraya/action-branch-name@master
