@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Lightning Components</fullName>
+        <default>false</default>
+        <label>Lightning Components</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Platform</fullName>
+        <default>false</default>
+        <label>Platform</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Apex</fullName>
+        <default>false</default>
+        <label>Apex</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Cloud</fullName>
+        <default>false</default>
+        <label>Sales Cloud</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service Cloud</fullName>
+        <default>false</default>
+        <label>Service Cloud</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Einstein Cloud</fullName>
+        <default>false</default>
+        <label>Einstein Cloud</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commerce Cloud</fullName>
+        <default>false</default>
+        <label>Commerce Cloud</label>
+    </standardValue>
+</StandardValueSet>

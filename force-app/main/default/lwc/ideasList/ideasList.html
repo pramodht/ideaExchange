@@ -1,0 +1,7 @@
+<template>
+    <template for:each={ideas.data} for:item="idea">
+        <div key={idea.Id} class="slds-var-p-around_medium">
+            <c-idea key={idea.Id} idea={idea.ideaItem} vote={idea.voteItem}></c-idea>
+        </div>
+    </template>
+</template>

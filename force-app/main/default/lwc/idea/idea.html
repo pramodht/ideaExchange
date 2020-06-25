@@ -1,0 +1,41 @@
+<template>
+    <article class="slds-card">
+        <div class="slds-grid slds-gutters slds-var-p-around_medium">
+            <div class="slds-col slds-size_2-of-3">
+                <div class="">
+                    <a href={idea.Id} class="links">
+                        <span>
+                            {idea.Title}
+                        </span>
+                    </a>
+                    <p class="slds-var-p-top_medium">
+                        <lightning-formatted-rich-text value={idea.Body} >
+                        </lightning-formatted-rich-text>
+                    </p>
+                </div>
+                <p class="slds-var-p-top_medium">
+                    <a href={idea.Id} >{idea.NumComments} Comments</a>
+                    <span> · </span>
+                    <c-relative-date-time  time={idea.CreatedDate}></c-relative-date-time>
+                </p>
+            </div>
+            <div class="slds-col slds-size_1-of-3 creatorInfo">
+                <lightning-layout>
+                    <lightning-layout-item padding="around-small">
+                        <c-vote-info>
+                        </c-vote-info>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                        <span>
+                            <lightning-avatar size="large" variant="circle" src={idea.CreatorFullPhotoUrl}></lightning-avatar>
+                        </span>
+                        <p>
+                            {idea.CreatorName}
+                        </p>
+                    </lightning-layout-item>
+                </lightning-layout>
+                
+            </div>
+        </div>
+    </article>
+</template>
