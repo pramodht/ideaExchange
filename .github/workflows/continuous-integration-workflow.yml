@@ -1,8 +1,6 @@
 name: Enforce branch naming
 
 on: [push, pull_request]
-branches-ignore:
-    -master
 
 jobs:
   validate-branch-name:
