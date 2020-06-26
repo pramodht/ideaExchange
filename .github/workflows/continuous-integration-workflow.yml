@@ -10,4 +10,4 @@ jobs:
         uses: deepakputhraya/action-branch-name@master
         with:
             regex: '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$'
-            min_length: 6
+            min_length: 6 
